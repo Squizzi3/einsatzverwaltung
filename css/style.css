@@ -1,9 +1,117 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 1.825rem;
-    color: #111111;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.background-image {
+    height: 100%;
+    background-image: url("/img/HLF10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.98);
+}
+
+.login-container {
+    position: absolute;
+    max-width: 412px;
+    min-width: 412px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #1E1111;
+}
+
+.login-container h2 {
+    color: #1E1111;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 22pt;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 11px 0 0 0;
+    background: #1E1111;
+    color: #ffffff;
+    min-width: 40px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    color: #ffffff;
+    background: #1E1111;
+    border: 2px solid #1E1111;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-field:focus,
+.login-btn:focus {
+    outline: none;
+}
+
+.input-field::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.input-field:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.input-field::placeholder {
+    color: #ffffff;
+}
+
+.login-btn {
+    background-color: rgb(29, 136, 42);
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.login-btn:hover {
+    background-color: rgb(21, 97, 30);
+    transition: 500ms ease-in-out;
+}
+
+@media only screen and (max-width: 450px) {
+    .login-container {
+        max-width: 412px;
+        min-width: 312px;    
+    }
 }
