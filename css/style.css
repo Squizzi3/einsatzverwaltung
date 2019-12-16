@@ -154,6 +154,32 @@ html {
     padding-right: 16px;
 }
 
+.account {
+    width: 260px;
+    position: fixed;
+    bottom: 0;
+    background-color: #4E2C2C;
+}
+
+.account p {
+    padding: 16px 14px 14px 20px;
+    font-size: 20px;
+    float: left;
+    color: #ffffff;
+}
+
+.account i {
+    padding: 20px;
+    color: #ffffff;
+    float: right;
+    transition: transform .4s ease-in-out;
+}
+
+.account i:hover {
+    transform: rotate(360deg);
+    color: #1E1111;  
+}
+
 /* Main Section */
 .main {
     width: 100%;
@@ -170,4 +196,54 @@ html {
 .main-content {
     margin-left: 260px;
     padding: 20px;
+}
+
+.main-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 14px 0 rgba(53,64,82,.05);
+    border-radius: 3px;
+}
+
+.card h2,
+.card h5 {
+    color: #141414;
+}
+
+/* Einsatztabelle */
+.table-einsaetze {
+    border-collapse: collapse;
+    min-width: 400px
+}
+
+.table-einsaetze thead tr {
+    background-color: #3E2323;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.table-einsaetze th,
+.table-einsaetze td {
+    padding: 12px 15px;
+}
+
+.table-einsaetze tbody tr {
+    border-bottom: 1px solid #4E2C2C;
+}
+
+.table-einsaetze tbody td i {
+    padding-right: 10px;
+}
+
+.table-einsaetze tbody td i:hover {
+    color: #c0392b;
+    cursor: pointer;
 }
