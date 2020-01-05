@@ -17,27 +17,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Styles | Scripts -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Einsatzverwaltung</title>
+    <title><?php if (isset($title)) {echo $title;} else {echo "Einsatzverwaltung";} ?></title>
 </head>
 <body>
-    <div class="background-image">
-        <div class="login-container">
-            <h2>Einsatzverwaltung</h2>
-            <form>                
-                <div class="input-container">
-                    <i class="fa fa-user icon"></i>
-                    <input class="input-field" type="text" placeholder="Benutzername" name="usrnm">
-                </div>                            
-                <div class="input-container">
-                    <i class="fa fa-lock icon"></i>
-                    <input class="input-field" type="password" placeholder="Passwort" name="psw">
-                </div>                
-                <button type="submit" class="login-btn">LOGIN</button>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
